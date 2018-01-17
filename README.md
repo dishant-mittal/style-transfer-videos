@@ -10,7 +10,7 @@ This is a project was implemented me, Michael Honke and Rahul Iyer as a part of 
 Below are the results of the combined model applied on three different samples:
 
 #### Sample 1:
-Input \␣ \␣ \␣ \␣Reference Image                              Output
+Input                           Reference Image                              Output
 <img src="car.gif" width="1000" height="170" />
 
 #### Sample 2:
