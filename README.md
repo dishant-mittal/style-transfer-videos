@@ -9,11 +9,11 @@ This is a project was implemented me, Michael Honke and Rahul Iyer as a part of 
 -->
 Below are the results of the combined model applied on three different samples:
 
-####Sample 1:
+#### Sample 1:
 <img src="car.gif" width="1000" height="170" />
 
-####Sample 2:
+#### Sample 2:
 <img src="paris.gif" width="1000" height="170" />
 
-####Sample 3:
+#### Sample 3:
 <img src="square.gif" width="1000" height="170" />
