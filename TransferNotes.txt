@@ -1,0 +1,51 @@
+Notes to aid with transferring code.
+
+-------------------------
+Identical Functions
+-------------------------
+StyleLoss:__init
+StyleLoss:updatedOutput
+StyleLoss:updateGradInput
+
+TVLoss:__init
+TVLoss:updateOutput
+TVLoss:updateGradInput
+
+GramMatrix
+
+ContentLoss:__init
+ContentLoss:updateOutput
+ContentLoss:updateGradInput
+
+-------------------------
+Copied Functions (to Video)
+-------------------------
+StyleLossWithSeg:__init
+StyleLossWithSeg:updateOutput
+StyleLossWithSeg:updateGradInput
+
+MattingLaplacian
+SmoothLocalAffine
+ErrorMapLocalAffine
+
+deepcopy
+build_filename
+
+-------------------------
+Additional Functions (Video)
+-------------------------
+WeightedContentLoss:__init
+WeightContentLoss:updateOutput
+WeightContentLoss:updateGradInput
+ - Not dependent on style.
+
+-------------------------
+Modified Functions
+-------------------------
+NOTE: maybe_save is different but never used in photo code.
+-------------------------
+Safe to Leave Different In Video
+-------------------------
+maybe_print
+ - Adds temporal losses.
+ - TODO: Add segmentation loss.

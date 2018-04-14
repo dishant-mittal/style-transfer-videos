@@ -1,0 +1,24 @@
+Convert frames to video
+ffmpeg -framerate 24 -i out-%04d.png  out.mp4
+
+Convert style
+./stylizeVideo.sh example/marple8_0%d.ppm example/seated-nude.jpg
+
+Batch resize with proper frame numbering on output
+convert -scene 1 'frame_*.png[300x>]' small/small_%04d.png
+
+RUN COMMAND
+th artistic_video.lua \
+-content_pattern  my_example/small/small_%04d.png \
+-flow_pattern flow/backward_[%d]_{%d}.flo \
+-flowWeight_pattern flow/reliable_[%d]_{%d}.pgm \
+-style_weight -1e2 \
+-temporal_weight 1e3 \
+-output_folder small_x04d2 \
+-style_image seated-nude.jpg \
+-backend nn \
+-gpu 0 \
+-cudnn_autotune \
+-number_format %04d
+-content_segmentation_path bridge_seg_small/out%d.png.png
+-style_segmentation_path reference_small.png.png
